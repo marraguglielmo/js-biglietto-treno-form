@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css' integrity='sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css' integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==' crossorigin='anonymous'/>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.js' integrity='sha512-lsA4IzLaXH0A+uH6JQTuz6DbhqxmVygrWv1CpC/s5vGyMqlnP0y+RYt65vKxbaVq+H6OzbbRtxzf+Zbj20alGw==' crossorigin='anonymous'></script>
 
     <title>Biglietto Form</title>
     <link rel="stylesheet" href="css/style.css">
@@ -13,10 +15,11 @@
 
     <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     
-    <div class="box-dati">
+    <!-- BOX FORM -->
+    <div class="dati">
         <!-- FORM -->
         <form action="#">
-
+            
             <!-- nome -->
             <input type="text" placeholder="Nome" id="nome">
             <!-- km -->
@@ -27,11 +30,33 @@
                 <option value="2">Standard</option>
                 <option value="3">Over 65</option>
             </select>
-
+            
+            <!-- button genera -->
+            <button class="btn-gen btn btn-primary">Genera</button>
+            <button class="btn-res btn btn-primary">Annulla</button>
+            
         </form>
         <!-- /FORM -->
         
     </div>
+    <!-- /BOX FORM -->
+
+    <!-- BOX TICKET -->
+    <div class="ticket">
+
+        <h2>dettaglio passeggeri</h2>
+
+        <div class="box-ticket">
+            <!-- box name -->
+            <div class="box-name">
+                <h4>NOME PASSEGGERO</h4>
+                <p id="ticket-name"></p>
+            </div>
+
+        </div>
+        
+    </div>
+    <!-- BOX TICKET -->
     
     <script src="JS/script.js"></script>
 </body>

@@ -13,9 +13,26 @@ h1{
     text-align: center;
 }
 
-.box-dati{
+.dati{
+    display: flex;
     margin: 0 auto;
     border: 1px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 30px 45px;
+    margin-bottom: 50px;
+}
+
+select{
+    display: inline-block !important;
+    width: 150px !important;
+}
+
+.ticket{
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
     width: fit-content;
     padding: 30px 45px;
 }
