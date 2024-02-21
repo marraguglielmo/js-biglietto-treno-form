@@ -17,10 +17,13 @@ let isValidData = true;
 
 // calcoli
 price = km.value * rate;
-finalPrice = price;
 
-if(age < 18){
-    finalPrice = 1 -(youngDiscount / 100);
+if(age.value === '1'){
+    price *= 1 -(youngDiscount / 100);
+}else if(age.value === '2'){
+    price = price;
+} else{
+    price *= 1 -(seniorDiscount / 100);
 }
 
 
@@ -29,3 +32,4 @@ console.log(price);
 console.log(name.value);
 console.log(km.value);
 console.log(age.value);
+console.log(finalPrice);
