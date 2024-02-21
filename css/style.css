@@ -9,8 +9,17 @@ body{
 
 }
 
+.debug{
+    background-color: rgba(0, 128, 0, 0.4);
+    border: 1px solid black;
+}
+
 h1{
     text-align: center;
+}
+
+h2{
+    display: block;
 }
 
 .dati{
@@ -29,10 +38,24 @@ select{
 }
 
 .ticket{
-    display: flex;
+    /* display: flex; */
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 10px;
     width: fit-content;
     padding: 30px 45px;
+}
+
+.ticket h4{
+    text-align: start;
+}
+
+.ticket .box-ticket{
+    display: flex;
+}
+
+.ticket .box-ticket .box-name{
+    display: flex;
+    flex-direction: column;
+    
 }

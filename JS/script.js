@@ -7,7 +7,9 @@ const youngDiscount = 20;
 const seniorDiscount = 40;
 let price;   
 let ticketName;
+let ticketPrice;
 let txtTicketName = "";
+let txtTicketPrice = "";
 const isValidData = true;
 
 // BOTTONI
@@ -35,11 +37,23 @@ price = price.toFixed(2);
 ticketName = document.getElementById('ticket-name');
 ticketName.innerHTML = txtTicketName;
 
+ticketPrice = document.getElementById('ticket-price');
+ticketPrice.innerHTML = txtTicketPrice;
+
 btnGen.addEventListener('click', function(){
     // neutralizzo l'action del form
     event.preventDefault();
+    // rendere visibile il ticket
+
+
     // aggiungo il nome nel ticket
     ticketName.innerHTML = name.value;
+    // aggiungo la carrozza
+
+    // aggiungo il codice CP
+
+    // aggiungo il costo del biglietto
+    ticketPrice.innerHTML = `${price}&euro; `;
 })
 
 
