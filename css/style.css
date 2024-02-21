@@ -12,3 +12,10 @@ body{
 h1{
     text-align: center;
 }
+
+.box-dati{
+    margin: 0 auto;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 30px 45px;
+}
