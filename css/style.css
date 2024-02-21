@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+    --green: #265858;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +11,8 @@
 }
 
 body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    font-family: "Poppins", sans-serif;
+    background-color: var(--red);
 }
 
 .debug{
@@ -22,14 +28,41 @@ h2{
     display: block;
 }
 
+h5{
+    font-weight: bold;
+}
+
 .dati{
     display: flex;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 3px solid var(--green);
     border-radius: 10px;
     width: fit-content;
     padding: 30px 45px;
     margin-bottom: 50px;
+}
+
+.dati .inputs{
+    display: flex;
+}
+
+.dati .inputs input{
+    width: 200px;
+}
+
+.dati .inputs div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.btn-gen,.btn-res{
+    background-color: var(--green);
+}
+
+.btn-res:hover,
+.btn-gen:hover{
+    background-color: #488f8f;
 }
 
 select{
@@ -39,8 +72,8 @@ select{
 
 .ticket{
     margin: 0 auto;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 3px solid var(--green);
+    border-radius: 2px;
     width: fit-content;
     padding: 30px 45px;
 }
@@ -52,6 +85,35 @@ select{
 .ticket .box-ticket{
     display: flex;
 }
+
+.ticket  .box-name{
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 130px;
+    padding: 15px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.ticket  .box-name p{
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+
+.ticket p{
+    color:#265858;
+}
+
+.ticket .box-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+    padding: 15px;
+}
+
 
 .ticket .box-ticket .box-name{
     display: flex;

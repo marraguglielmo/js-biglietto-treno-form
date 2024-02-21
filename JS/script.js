@@ -8,7 +8,7 @@ const seniorDiscount = 40;
 let price;   
 let txtTicketName = "";
 let txtTicketPrice = "";
-const ticket = document.querySelector('.ticket');
+const ticket = document.querySelector('.main-ticket');
 const isValidData = true;
 
 // BOTTONI
@@ -44,18 +44,21 @@ ticketPrice.innerHTML = txtTicketPrice;
 btnGen.addEventListener('click', function(){
     // neutralizzo l'action del form
     event.preventDefault();
+
     // rendere visibile il ticket
     ticket.classList.remove('d-none')
 
-
     // aggiungo il nome nel ticket
     ticketName.innerHTML = name.value;
+
     // aggiungo la carrozza
     let ticketCoach = document.getElementById('ticket-coach');
     ticketCoach.innerHTML = Math.floor(Math.random() * (10 - 1 + 1) +1);
+
     // aggiungo il codice CP
     let ticketCp = document.getElementById('ticket-cp');
     ticketCp.innerHTML = Math.floor(Math.random() * (100000 - 10000 + 1) +1);
+
     // aggiungo il costo del biglietto
     ticketPrice.innerHTML = `${price}&euro;`;
 })
