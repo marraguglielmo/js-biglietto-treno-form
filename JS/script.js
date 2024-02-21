@@ -10,6 +10,7 @@ let ticketName;
 let ticketPrice;
 let txtTicketName = "";
 let txtTicketPrice = "";
+const ticket = document.querySelector('.ticket');
 const isValidData = true;
 
 // BOTTONI
@@ -34,16 +35,19 @@ if(age.value === '1'){
 price = price.toFixed(2);
 
 // FUNZIONI
+
 ticketName = document.getElementById('ticket-name');
 ticketName.innerHTML = txtTicketName;
 
 ticketPrice = document.getElementById('ticket-price');
 ticketPrice.innerHTML = txtTicketPrice;
 
+
 btnGen.addEventListener('click', function(){
     // neutralizzo l'action del form
     event.preventDefault();
     // rendere visibile il ticket
+    ticket.classList.remove('d-none')
 
 
     // aggiungo il nome nel ticket
@@ -53,7 +57,7 @@ btnGen.addEventListener('click', function(){
     // aggiungo il codice CP
 
     // aggiungo il costo del biglietto
-    ticketPrice.innerHTML = `${price}&euro; `;
+    ticketPrice.innerHTML = `${price}&euro;`;
 })
 
 
